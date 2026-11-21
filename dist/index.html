@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Зверополистегі қазақша детектив ойыны">
+<title>Зверополис · Түнгі эфир</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="ai.js"></script>
+<script defer src="game.js"></script>
+</head>
+<body>
+<header class="wrap masthead">
+  <a href="./" class="brand"><span aria-hidden="true">✦</span><div>ЗВЕРОПОЛИС<small>ПОЛИЦИЯ БӨЛІМІ</small></div></a>
+  <button id="help" class="quiet">Ойын ережесі</button>
+</header>
+<main class="wrap">
+  <section class="hero" id="intro">
+    <div class="hero-text">
+      <p class="eyebrow">ФЕСТИВАЛЬДЕГІ ТЕРГЕУ</p>
+      <h1>Түнгі<br><em>эфир</em></h1>
+      <p>Фестивальде Богоның жалған бұйрығы эфирге шықты. Джуди мен Ник шын жазбаны тауып, бүкіл қала естімей тұрып жалған хабарды тоқтатуы керек.</p>
+      <div class="actions"><button id="start" class="primary">Тергеуді бастау</button><button id="resume" class="quiet" hidden>Жалғастыру</button></div>
+    </div>
+  </section>
+  <section class="campaign" id="campaign" hidden>
+    <nav id="chapters" class="chapters" aria-label="Тергеу кезеңдері"></nav>
+    <div class="section-head"><div><p id="location" class="eyebrow"></p><h1 id="chapter-title" tabindex="-1"></h1></div><span id="counter" class="chip"></span></div>
+    <div class="layout">
+      <section id="board" class="panel play-area" aria-label="Ойын алаңы"></section>
+      <aside class="panel briefing">
+        <div id="brief"></div>
+        <div id="controls"></div>
+        <div id="feedback" class="feedback" role="status"></div>
+      </aside>
+    </div>
+    <div id="debrief" class="panel debrief" hidden></div>
+  </section>
+</main>
+<footer class="wrap"><span>QAIRU · Жасанды интеллект негіздері</span><a href="source.zip" download>Бастапқы кодты жүктеу</a></footer>
+<dialog id="dialog">
+  <div class="section-head"><h2>Ойын ережесі</h2><form method="dialog"><button class="quiet" aria-label="Жабу">✕</button></form></div>
+  <p>Қууда WASD, бағыт пернелері немесе картадағы көрші ұяшықтар арқылы жүр. Қалған кезеңдерде пульт пен дәліз батырмаларын бас.</p>
+  <p>«Кеңес» батырмасы тұрып қалсаң көмектеседі. Әр кезеңнің соңында алгоритмнің қысқа түсіндірмесі шығады.</p>
+</dialog>
+</body>
+</html>
